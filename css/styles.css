@@ -10,6 +10,11 @@ a {
     text-decoration: none;
 }
 
+a:hover,
+a:focus {
+
+}
+
 *,
 *::after,
 *::before {
@@ -30,3 +35,43 @@ img {
     display: block;
     max-width: 100%;
 }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-right: 93px;
+}
+
+.section-team {
+
+}
+
+.container {
+
+}
+
+.team-title {
+}
+
+.team-list {
+    
+}
+
+.team-list-item {
+}
+
+.team-image {
+    width: 270px;
+    height: 260px;
+}
+
+.team-list-title {
+}
+
+.team-list-text {
+
+}
+
