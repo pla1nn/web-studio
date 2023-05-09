@@ -16,41 +16,43 @@
     <!-- HEADER -->
 
     <header class="header">
-        <a class="logo" href="./index.html"><img src="./imgs/logo.svg" alt=""></a>
-        <nav>
-            <ul class="nav-list">
-                <li class="nav-list-item"><a class="nav-list-link" href="#">Студія</a></li>
-                <li class="nav-list-item"><a class="nav-list-link" href="#">Портфоліо</a></li>
-                <li class="nav-list-item"><a class="nav-list-link" href="#">Контакти</a></li>
-            </ul>
-            <ul>
-                <li class=""><a class="nav-contacts" href="mailto:info@devstudio.com">
-                    <svg width="16px"
-                    height="12px">
-                        <use href="./imgs/icons/symbol-defs.svg#icon-envelope">
-
-                        </use>
-                    </svg>
-                    info@devstudio.com</a></li>
-
-                <li class=""><a class="nav-contacts" href="tel:380961111111">
-                    <svg width="10px"
-                    height="16px">
-                        <use href="./imgs/icons/symbol-defs.svg#icon-phone">
-
-                        </use>
-                    </svg>
-                    +38 096 111 11 11</a></li>
-            </ul>
-        </nav>
-    </header>
+        <div class="container">
+            <nav>
+                <a class="logo" href="./index.html"><img class="logo-image" src="./imgs/logo.svg" alt=""></a>
+                <ul class="nav-list">
+                    <li class="nav-list-item"><a class="nav-list-link" href="#">Студія</a></li>
+                    <li class="nav-list-item"><a class="nav-list-link" href="#">Портфоліо</a></li>
+                    <li class="nav-list-item"><a class="nav-list-link" href="#">Контакти</a></li>
+                </ul>
+                <ul class="nav-contacts">
+                    <li class=""><a class="nav-contacts-item" href="mailto:info@devstudio.com">
+                        <svg class="nav-contacts-icon" width="16px"
+                        height="12px">
+                            <use href="./imgs/icons/symbol-defs.svg#icon-envelope">
+    
+                            </use>
+                        </svg>
+                        info@devstudio.com</a></li>
+    
+                    <li class=""><a class="nav-contacts-item" href="tel:380961111111">
+                        <svg class="nav-contacts-icon" width="10px"
+                        height="16px">
+                            <use href="./imgs/icons/symbol-defs.svg#icon-phone">
+    
+                            </use>
+                        </svg>
+                        +38 096 111 11 11</a></li>
+                </ul>
+            </nav>
+        </header>
+        </div>
 
 
         <!-- HERO -->
 
     <section class="section-hero">
         <h1 class="hero-title">Ефективні рішення для <br> вашого бізнесу</h1>
-        <button class="hero-button" type="button">Замовити послугу</button>
+        <button class="hero-button" type="button"><p class="hero-text">Замовити послугу</p></button>
     </section>
 
 
@@ -61,28 +63,35 @@
         <div class="container">
             <ul class="icons-list">
                 <li class="icons-list-item">
-                    <svg>
-                        <use href="./imgs/icons/antenna.svg"></use>
-                    </svg>
+                    <div class="icons-background">
+                        <svg width="70"
+                        height="70">
+                            <use href="./imgs/icons/symbol-defs.svg#icon-envelope"></use>
+                        </svg>
+
+                    </div>
                     <h3 class="icons-list-title">УВАГА ДО ДЕТАЛЕЙ</h3>
                     <p class="icons-list-text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
                 </li>
                 <li class="icons-list-item">
-                    <svg>
+                    <svg width="70"
+                    height="70">
                         <use href="./imgs/icons/clock.svg"></use>
                     </svg>
                     <h3 class="icons-list-title">ПУНКТУАЛЬНІСТЬ</h3>
                     <p class="icons-list-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
                 </li>
                 <li class="icons-list-item">
-                    <svg>
+                    <svg width="70"
+                    height="70">
                         <use href="./imgs/icons/diagram.svg"></use>
                     </svg>
                     <h3 class="icons-list-title">ПЛАНУВАННЯ</h3>
                     <p class="icons-list-text">Так само консультація з широким активом значною мірою зумовлює.</p>
                 </li>
                 <li class="icons-list-item">
-                    <svg>
+                    <svg width="70"
+                    height="70">
                         <use href="./imgs/icons/astronaut.svg"></use>
                     </svg>
                     <h3 class="icons-list-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
@@ -93,7 +102,11 @@
     </section>
 
 
+
+
     <!-- PROJECTS -->
+
+
 
     <section class="section-projects">
         <div class="container">
@@ -107,7 +120,12 @@
     </section>
 
 
+
+
     <!-- TEAM -->
+
+
+
 
     <section class="section-team">
         <div class="container">
