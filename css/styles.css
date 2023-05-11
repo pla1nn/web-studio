@@ -8,6 +8,7 @@ ul {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 a:hover,
@@ -42,7 +43,7 @@ nav {
 }
 
 .container {
-    width: 1170px;
+    width: 1200px;
     margin: 0 auto;
     padding-right: 15px;
     padding-left: 15px;
@@ -196,12 +197,16 @@ nav {
 
 
 .section-icons {
+    margin-bottom: 94px;
 }
+
 .icons-list {
     display: flex;
 
 }
+
 .icons-list-item {
+
 }
 
 .icons-list-item:not(:last-child) {
@@ -298,14 +303,17 @@ nav {
 }
 
 .team-list-item {
+    width: 270px;
+    height: 428px;
 }
 
 .team-icons-item:not(:last-child) {
-    
+    margin-right: 10px;
 }
 
 .team-list-icons {
-
+    display: flex;
+    
 }
 
 .team-image {
@@ -314,9 +322,110 @@ nav {
 }
 
 .team-list-title {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: #212121;
 }
 
 .team-list-text {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: #757575;
+}
+
+
+/* FOOTER */
+
+
+.footer {
+    height: 252px;
+    background-color: #2F303A;
+}
+
+.footer-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-contacts {
+}
+.footer-logo {
+}
+.footer-contacts-list {
+}
+.footer-contacts-item {
+    
+}
+
+.footer-adress {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    
+    color: #FFFFFF;
+}
+
+.footer-mail {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-number {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-apps-title {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+}
+
+.footer-apps-list {
 
 }
 
+.footer-apps-item {
+
+}
+
+.footer-input {
+
+}
+
+.footer-btn {
+    width: 200px;
+    height: 50px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    
+}
