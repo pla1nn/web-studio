@@ -269,9 +269,6 @@ nav {
 
 
 .section-team {
-    width: 1600px;
-    height: 708px;
-
     background-color: #f5f4fa;
 }
 
@@ -287,24 +284,20 @@ nav {
 
     padding-top: 94px;
     padding-bottom: 50px;
-    padding-left: 168px;
 
 }
 
 .team-list {
     display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.team-list:not(:last-child) {
-    margin-right: 30px;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .team-list-item {
-    width: 270px;
-    height: 428px;
+    flex-basis: calc((100% - 3 * 30) / 4);
+    background-color: white;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-icons-item:not(:last-child) {
@@ -342,6 +335,30 @@ nav {
     
     color: #757575;
 }
+
+
+
+/* CLIENTS */
+
+
+
+.clients-section {
+    
+}
+
+.clients-title {
+    
+}
+
+.clients-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clients-list-item {
+}
+
+
 
 
 /* FOOTER */
