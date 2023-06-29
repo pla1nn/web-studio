@@ -1,0 +1,50 @@
+.section-icons {
+    margin-bottom: 94px;
+}
+
+.icons-list {
+    display: flex;
+
+}
+
+
+
+
+.icons-list-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.icons-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    
+}
+
+.icons-list-title {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: #212121;
+    margin-bottom: 10px;
+}
+
+.icons-list-text {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    
+    color: #757575;
+}
