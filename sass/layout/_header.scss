@@ -6,6 +6,12 @@
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
+
+    & .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 nav {
@@ -102,5 +108,15 @@ nav {
 
     .nav-list-item:not(:last-child) {
         margin-right: 50px;
+    }
+
+    .header .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-contacts {
+        display: block;
     }
 }
