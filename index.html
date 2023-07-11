@@ -62,7 +62,7 @@
 
     <section class="section-hero">
         <h1 class="hero-title">Ефективні рішення для <br> вашого бізнесу</h1>
-        <button class="hero-button" type="button"><p class="hero-text">Замовити послугу</p></button>
+        <button class="hero-button" type="button" data-modal-open><p class="hero-text">Замовити послугу</p></button>
     </section>
 
 
@@ -425,5 +425,52 @@
         </div>
     </footer>
     
+
+    <!-- WINDOW -->
+
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <h3 class="modal-title">
+                Залиште свої дані, ми вам передзвонимо
+            </h3>
+            <form>
+                <div class="modal-form">
+                    <label class="modal-label">
+                        <span class="modal-input-title">Ім'я</span>
+                        <div class="modal-form-field">
+                            <input class="modal-form-input" type="text">
+                            <svg class="modal-icon" width="18px" height="18px">
+                                <use href="./imgs/icons/"></use>
+                            </svg>
+                        </div>
+                    </label>
+                </div>
+                <div class="modal-form">
+                    <label class="modal-label">
+                        <span class="modal-input-title">Ім'я</span>
+                        <div class="modal-form-field">
+                            <input class="modal-form-input" type="text">
+                            <svg class="modal-icon" width="18px" height="18px">
+                                <use href="./imgs/icons/"></use>
+                            </svg>
+                        </div>
+                    </label>
+                </div>
+            </form>
+        </div>
+        <button class="button-close" type="button" data-model-close>
+            <svg>
+                <use>
+
+                </use>
+            </svg>
+        </button>
+    </div>
+
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
+
 </body>
 </html> 
