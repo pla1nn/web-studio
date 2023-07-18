@@ -1,11 +1,11 @@
 .section-hero {
-    background-image: url(/imgs/jpgs/hero-phone-img.jpg);
-    width: 1490px;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 94px;
+    height: 400px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.40) , rgba(47, 48, 58, 0.40) ), url(/imgs/hero/hero-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    background-color: #2F303A;
 }
 
 .hero-title {
