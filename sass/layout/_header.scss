@@ -2,10 +2,6 @@
     padding-top: 16px;
     padding-bottom: 16px;
     border-bottom: 1px solid #ECECEC;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
 
     & .container {
         display: flex;
@@ -57,7 +53,7 @@ nav {
     
 }
 
-.nav-contacts-item {
+.nav-list-item {
     color: #757575;
 }
 
@@ -77,6 +73,10 @@ nav {
 
 @media screen and (max-width: 767px) {
     nav {
+        display: none;
+    }
+
+    .nav-list {
         display: none;
     }
 
@@ -101,9 +101,11 @@ nav {
     }
 
     .nav-list-item {
-        color: #212121;
-        font-weight: 500;
-        letter-spacing: 0.28px;
+        color: #757575;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.12px;
     }
 
     .nav-list-item:not(:last-child) {
@@ -119,4 +121,31 @@ nav {
     .nav-contacts {
         display: block;
     }
+
+    .nav-contacts-icon {
+        margin-right: 8px;
+    }
+
+    .nav-contacts-item:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    .nav-contacts-link {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .nav-contacts {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-contacts-item:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    
+    
 }
