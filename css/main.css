@@ -13,11 +13,6 @@ a {
   color: inherit;
 }
 
-a:hover,
-a:focus {
-  color: #2196F3;
-}
-
 *,
 *::after,
 *::before {
@@ -46,8 +41,12 @@ body {
   line-height: 16px;
 }
 
+a:hover,
+a:focus {
+  color: #2196F3;
+}
+
 .container {
-  width: 1200px;
   margin: 0 auto;
   padding-right: 15px;
   padding-left: 15px;
@@ -73,14 +72,16 @@ body {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .header {
   padding-top: 16px;
   padding-bottom: 16px;
   border-bottom: 1px solid #ECECEC;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
 }
 .header .container {
   display: flex;
@@ -130,7 +131,7 @@ nav {
   display: flex;
 }
 
-.nav-contacts-item {
+.nav-list-item {
   color: #757575;
 }
 
@@ -152,6 +153,9 @@ nav {
   nav {
     display: none;
   }
+  .nav-list {
+    display: none;
+  }
   .nav-contacts {
     display: none;
   }
@@ -169,9 +173,11 @@ nav {
     display: none;
   }
   .nav-list-item {
-    color: #212121;
-    font-weight: 500;
-    letter-spacing: 0.28px;
+    color: #757575;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.12px;
   }
   .nav-list-item:not(:last-child) {
     margin-right: 50px;
@@ -184,15 +190,34 @@ nav {
   .nav-contacts {
     display: block;
   }
+  .nav-contacts-icon {
+    margin-right: 8px;
+  }
+  .nav-contacts-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .nav-contacts-link {
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav-contacts {
+    display: flex;
+    align-items: center;
+  }
+  .nav-contacts-item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 .section-hero {
-  background-image: url(../imgs/jpgs/team.jpg);
-  width: 1490px;
-  height: 600px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 94px;
+  height: 400px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/imgs/jpgs/hero/hero-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  background-color: #2F303A;
 }
 
 .hero-title {
@@ -292,6 +317,11 @@ nav {
   justify-content: space-between;
 }
 
+@media screen and (max-width: 1199px) {
+  .section-features {
+    display: none;
+  }
+}
 .section-team {
   background-color: #f5f4fa;
   padding-bottom: 94px;
@@ -551,4 +581,133 @@ nav {
   text-align: center;
   letter-spacing: 0.06em;
   color: #FFFFFF;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 250ms ease-in;
+}
+
+.backdrop .is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.backdrop .is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.modal-title {
+  color: #212121;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.6px;
+}
+
+.modal-form {
+  position: relative;
+}
+
+.modal-input-title {
+  color: #757575;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.12px;
+}
+
+.modal-form-input {
+  width: 100%;
+  padding-left: 42px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.modal-form-input:focus {
+  outline: none;
+}
+
+.modal-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+}
+.modal-input-title {
+  color: #757575;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.12px;
+}
+
+.checkbox-title {
+  color: #757575;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.36px;
+}
+
+.checkbox-link {
+  color: #2196F3;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.36px;
+  text-decoration-line: underline;
+}
+
+.modal-button {
+  border-radius: 4px;
+  background: #2196F3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 40px;
+  transform: translate(-50%, -50%) scale(1);
+  width: 450px;
+  height: 609px;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+  transition: transform 250ms ease-in;
+}
+
+.button-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }/*# sourceMappingURL=main.css.map */
