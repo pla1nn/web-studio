@@ -1,26 +1,25 @@
 .section-features {
-    margin-bottom: 94px;
+    display: none;
 }
 
-.features-title {
-    font-family: 'Roboto';
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    
-    margin-bottom: 50px;
-    color: #212121;
-}
-
-.features-box {
-    display: flex;
-    justify-content: space-between;
-}
-
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
     .section-features {
-        display: none;
+        display: block;
+    }
+
+    .features-title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        
+        margin-bottom: 50px;
+        color: $titleColor;
+    }
+
+    .features-box {
+        display: flex;
+        justify-content: space-between;
     }
 }

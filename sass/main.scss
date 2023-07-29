@@ -2,6 +2,7 @@
 @import "./base/common";
 @import "./base/container";
 @import "./base/section";
+
 @import "./layout/header";
 @import "./layout/hero";
 @import "./layout/icons";
@@ -9,7 +10,10 @@
 @import "./layout/team";
 @import "./layout/clients";
 @import "./layout/footer";
+
 @import "./components/backdrop";
 @import "./components/modal-form";
 @import "./components/modal-window";
+@import "./components/backdrop";
+
 @import "./utils/var";
