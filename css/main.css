@@ -34,16 +34,16 @@ img {
   max-width: 100%;
 }
 
+a:hover,
+a:focus {
+  color: #2196F3;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-}
-
-a:hover,
-a:focus {
-  color: #2196F3;
 }
 
 .container {
@@ -343,6 +343,7 @@ nav {
 }
 
 .team-list-item {
+  flex-basis: calc((100% - 90px) / 4);
   background-color: white;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -406,27 +407,48 @@ nav {
 
 .icon {
   fill: #AFB1B8;
+  transition: fill 250ms ease-in;
 }
 
+@media screen and (min-width: 767px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .team-list-item {
+    flex-basis: calc((100% - 90px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-list-item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+  .team-title {
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+  }
+}
 .clients-section {
   margin-bottom: 94px;
 }
 
 .clients-title {
   margin-top: 94px;
-  margin-bottom: 50px;
-  font-family: "Roboto";
-  font-weight: 700;
-  font-size: 36px;
+  margin-bottom: 30px;
+  font-size: 28px;
   line-height: 42px;
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.84px;
   color: #212121;
 }
 
 .clients-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .clients-list-item {
@@ -437,6 +459,7 @@ nav {
   height: 92px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
+  flex-basis: calc((100% - 60px) / 2);
 }
 
 .clients-icon {
@@ -445,6 +468,24 @@ nav {
   fill: #AFB1B8;
 }
 
+.clients-title {
+  margin-top: 94px;
+  margin-bottom: 50px;
+  font-size: 36px;
+  letter-spacing: 1.08px;
+  color: #212121;
+}
+
+@media screen and (min-width: 768px) {
+  .clients-list-item {
+    flex-basis: calc((100% - 90px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-list-item {
+    flex-basis: auto;
+  }
+}
 .footer {
   height: 252px;
   background-color: #2F303A;
