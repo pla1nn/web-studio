@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
 
@@ -56,142 +56,285 @@
 
     <section class="projects-section">
         <div class="container">
-
+            <ul class="projects-nav-list">
+                <li class="projects-nav-item">
+                    <button type="button" class="projects-button">
+                        Усі
+                    </button>
+                </li>
+                <li class="projects-nav-item">
+                    <button type="button" class="projects-button">
+                        Веб-сайти
+                    </button>
+                </li>
+                <li class="projects-nav-item">
+                    <button type="button" class="projects-button">
+                        Додатки
+                    </button>
+                </li>
+                <li class="projects-nav-item">
+                    <button type="button" class="projects-button">
+                        Дизайн
+                    </button>
+                </li>
+                <li class="projects-nav-item">
+                    <button type="button" class="projects-button">
+                        Маркетинг
+                    </button>
+                </li>
+            </ul>
             <ul class="projects-list">
                 <li class="projects-list-item">
-                    <a href="#">
-                        <picture>
-                            <source srcset="./imgs/jpgs/portfolio/portfolio-1/portfolio-phone 1x ./imgs/jpgs/portfolio/portfolio-1/portfolio-phone-2x 2x"
-                            media="(max-width: 767px)">
-                            <source srcset="./imgs/jpgs/portfolio/portfolio-1/portfolio-tablet 1x ./imgs/jpgs/portfolio/portfolio-1/portfolio-tablet-2x 2x"
-                            media="(min-width: 768px)">
-                            <source srcset="./imgs/jpgs/portfolio/portfolio-1/portfolio-desktop 1x ./imgs/jpgs/portfolio/portfolio-1/portfolio-desktop-2x 2x"
-                            media="(min-width: 1200px)">
-                            <img src="#" alt=""> 
-                        </picture>
-                    </a>
-                    <h3 class="projects-title">Технокряк</h3>
-                    <p class="projects-text">Веб-сайт</p>
+                    <div class="list-header">
+                        <a href="#">
+                            <picture>
+                                <source srcset="./imgs/jpgs/portfolio/portfolio-1/portfolio-desktop.jpg 1x , ./imgs/jpgs/portfolio/portfolio-1/portfolio-desktop-2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                                <source srcset="./imgs/jpgs/portfolio/portfolio-1/portfolio-tablet.jpg 1x , ./imgs/jpgs/portfolio/portfolio-1/portfolio-tablet-2x.jpg 2x"
+                                media="(min-width: 768px)">
+                                <source srcset="./imgs/jpgs/portfolio/portfolio-1/portfolio-phone.jpg 1x , ./imgs/jpgs/portfolio/portfolio-1/portfolio-phone-2x.jpg 2x"
+                                media="(max-width: 767px)">
+                                <img src="#" alt=""> 
+                            </picture>
+                        </a>
+                        <div class="list-header-text-overlay">
+                            <p class="list-header-text">
+                                Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                 Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="list-footer">
+                        <h3 class="projects-title">Технокряк</h3>
+                        <p class="projects-text">Веб-сайт</p>
+
+                    </div>
                 </li>
                 <li class="projects-list-item">
-                    <a href="#">
-                        <picture>
-                            <source srcset="./imgs/jpgs/portfolio/portfolio-2/portfolio-phone 1x ./imgs/jpgs/portfolio/portfolio-2/portfolio-phone-2x 2x"
-                            media="(max-width: 767px)">
-                            <source srcset="./imgs/jpgs/portfolio/portfolio-2/portfolio-tablet 1x ./imgs/jpgs/portfolio/portfolio-2/portfolio-tablet-2x 2x"
-                            media="(min-width: 768px)">
-                            <source srcset="./imgs/jpgs/portfolio/portfolio-2/portfolio-desktop 1x ./imgs/jpgs/portfolio/portfolio-2/portfolio-desktop-2x 2x"
-                            media="(min-width: 1200px)">
-                            <img src="#" alt=""> 
-                        </picture>
-                    </a>
-                    <h3 class="projects-title">Постер New Orlean vs Golden Star</h3>
-                    <p class="projects-text">Дизайн</p>
+                    <div class="list-header">
+                        <a href="#">
+                            <picture>
+                                <source srcset="./imgs/jpgs/portfolio/portfolio-2/portfolio-desktop.jpg 1x , ./imgs/jpgs/portfolio/portfolio-2/portfolio-desktop-2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                                <source srcset="./imgs/jpgs/portfolio/portfolio-2/portfolio-tablet.jpg 1x , ./imgs/jpgs/portfolio/portfolio-2/portfolio-tablet-2x.jpg 2x"
+                                media="(min-width: 768px)">
+                                <source srcset="./imgs/jpgs/portfolio/portfolio-2/portfolio-phone.jpg 1x , ./imgs/jpgs/portfolio/portfolio-2/portfolio-phone-2x.jpg 2x"
+                                media="(max-width: 767px)">
+                                <img src="#" alt=""> 
+                            </picture>
+                        </a>
+                        <div class="list-header-text-overlay">
+                            <p class="list-header-text">
+                                Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                 Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="list-footer">
+                        <h3 class="projects-title">Постер New Orlean vs Golden Star</h3>
+                        <p class="projects-text">Дизайн</p>
+
+                    </div>
                 </li>
                 <li class="projects-list-item">
-                    <a href="#">
-                        <picture>
-                            <source srcset="./imgs/jpgs/portfolio/portfolio-3/portfolio-phone 1x ./imgs/jpgs/portfolio/portfolio-3/portfolio-phone-2x 2x"
-                            media="(max-width: 767px)">
-                            <source srcset="./imgs/jpgs/portfolio/portfolio-3/portfolio-tablet 1x ./imgs/jpgs/portfolio/portfolio-3/portfolio-tablet-2x 2x"
-                            media="(min-width: 768px)">
-                            <source srcset="./imgs/jpgs/portfolio/portfolio-3/portfolio-desktop 1x ./imgs/jpgs/portfolio/portfolio-3/portfolio-desktop-2x 2x"
-                            media="(min-width: 1200px)">
-                            <img src="#" alt=""> 
-                        </picture>
-                    </a>
-                    <h3 class="projects-title">Ресторан Seafood</h3>
-                    <p class="projects-text">Додаток</p>
+                    <div class="list-header">
+                        <a href="#">
+                            <picture>
+                                <source srcset="./imgs/jpgs/portfolio/portfolio-3/portfolio-desktop.jpg 1x , ./imgs/jpgs/portfolio/portfolio-3/portfolio-desktop-2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                                <source srcset="./imgs/jpgs/portfolio/portfolio-3/portfolio-tablet.jpg 1x , ./imgs/jpgs/portfolio/portfolio-3/portfolio-tablet-2x.jpg 2x"
+                                media="(min-width: 768px)">
+                                <source srcset="./imgs/jpgs/portfolio/portfolio-3/portfolio-phone.jpg 1x , ./imgs/jpgs/portfolio/portfolio-3/portfolio-phone-2x.jpg 2x"
+                                media="(max-width: 767px)">
+                                <img src="#" alt=""> 
+                            </picture>
+                        </a>
+                        <div class="list-header-text-overlay">
+                            <p class="list-header-text">
+                                Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                 Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="list-footer">
+                        <h3 class="projects-title">Ресторан Seafood</h3>
+                        <p class="projects-text">Додаток</p>
+
+                    </div>
                 </li>
                 <li class="projects-list-item">
-                    <a href="#">
-                        <picture>
-                            <source srcset="./imgs/jpgs/portfolio/portfolio-4/portfolio-phone 1x ./imgs/jpgs/portfolio/portfolio-4/portfolio-phone-2x 2x"
-                            media="(max-width: 767px)">
-                            <source srcset="./imgs/jpgs/portfolio/portfolio-4/portfolio-tablet 1x ./imgs/jpgs/portfolio/portfolio-4/portfolio-tablet-2x 2x"
-                            media="(min-width: 768px)">
-                            <source srcset="./imgs/jpgs/portfolio/portfolio-4/portfolio-desktop 1x ./imgs/jpgs/portfolio/portfolio-4/portfolio-desktop-2x 2x"
-                            media="(min-width: 1200px)">
-                            <img src="#" alt=""> 
-                        </picture>
-                    </a>
-                    <h3 class="projects-title">Проєкт Prime</h3>
-                    <p class="projects-text">Маркетинг</p>
+                    <div class="list-header">
+                        <a href="#">
+                            <picture>
+                                <source srcset="./imgs/jpgs/portfolio/portfolio-4/portfolio-desktop.jpg 1x , ./imgs/jpgs/portfolio/portfolio-4/portfolio-desktop-2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                                <source srcset="./imgs/jpgs/portfolio/portfolio-4/portfolio-tablet.jpg 1x , ./imgs/jpgs/portfolio/portfolio-4/portfolio-tablet-2x.jpg 2x"
+                                media="(min-width: 768px)">
+                                <source srcset="./imgs/jpgs/portfolio/portfolio-4/portfolio-phone.jpg 1x , ./imgs/jpgs/portfolio/portfolio-4/portfolio-phone-2x.jpg 2x"
+                                media="(max-width: 767px)">
+                                <img src="#" alt=""> 
+                            </picture>
+                        </a>
+                        <div class="list-header-text-overlay">
+                            <p class="list-header-text">
+                                Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                 Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="list-footer">
+                        <h3 class="projects-title">Проєкт Prime</h3>
+                        <p class="projects-text">Маркетинг</p>
+
+                    </div>
                 </li>
                 <li class="projects-list-item">
-                    <a href="#">
-                        <picture>
-                            <source srcset="./imgs/jpgs/portfolio/portfolio-5/portfolio-phone 1x ./imgs/jpgs/portfolio/portfolio-5/portfolio-phone-2x 2x"
-                            media="(max-width: 767px)">
-                            <source srcset="./imgs/jpgs/portfolio/portfolio-5/portfolio-tablet 1x ./imgs/jpgs/portfolio/portfolio-5/portfolio-tablet-2x 2x"
-                            media="(min-width: 768px)">
-                            <source srcset="./imgs/jpgs/portfolio/portfolio-5/portfolio-desktop 1x ./imgs/jpgs/portfolio/portfolio-5/portfolio-desktop-2x 2x"
-                            media="(min-width: 1200px)">
-                            <img src="#" alt=""> 
-                        </picture>
-                    </a>
-                    <h3 class="projects-title">Проєкт Boxes</h3>
-                    <p class="projects-text">Додаток</p>
+                    <div class="list-header">
+                        <a href="#">
+                            <picture>
+                                <source srcset="./imgs/jpgs/portfolio/portfolio-5/portfolio-desktop.jpg 1x , ./imgs/jpgs/portfolio/portfolio-5/portfolio-desktop-2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                                <source srcset="./imgs/jpgs/portfolio/portfolio-5/portfolio-tablet.jpg 1x , ./imgs/jpgs/portfolio/portfolio-5/portfolio-tablet-2x.jpg 2x"
+                                media="(min-width: 768px)">
+                                <source srcset="./imgs/jpgs/portfolio/portfolio-5/portfolio-phone.jpg 1x , ./imgs/jpgs/portfolio/portfolio-5/portfolio-phone-2x.jpg 2x"
+                                media="(max-width: 767px)">
+                                <img src="#" alt=""> 
+                            </picture>
+                        </a>
+                        <div class="list-header-text-overlay">
+                            <p class="list-header-text">
+                                Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                 Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="list-footer">
+                        <h3 class="projects-title">Проєкт Boxes</h3>
+                        <p class="projects-text">Додаток</p>
+
+                    </div>
                 </li>
                 <li class="projects-list-item">
-                    <a href="#">
-                        <picture>
-                            <source srcset="./imgs/jpgs/portfolio/portfolio-6/portfolio-phone 1x ./imgs/jpgs/portfolio/portfolio-6/portfolio-phone-2x 2x"
-                            media="(max-width: 767px)">
-                            <source srcset="./imgs/jpgs/portfolio/portfolio-6/portfolio-tablet 1x ./imgs/jpgs/portfolio/portfolio-6/portfolio-tablet-2x 2x"
-                            media="(min-width: 768px)">
-                            <source srcset="./imgs/jpgs/portfolio/portfolio-6/portfolio-desktop 1x ./imgs/jpgs/portfolio/portfolio-6/portfolio-desktop-2x 2x"
-                            media="(min-width: 1200px)">
-                            <img src="#" alt=""> 
-                        </picture>
-                    </a>
-                    <h3 class="projects-title">Inspiration has no Borders</h3>
-                    <p class="projects-text">Веб-сайт</p>
+                    <div class="list-header">
+                        <a href="#">
+                            <picture>
+                                <source srcset="./imgs/jpgs/portfolio/portfolio-6/portfolio-desktop.jpg 1x , ./imgs/jpgs/portfolio/portfolio-6/portfolio-desktop-2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                                <source srcset="./imgs/jpgs/portfolio/portfolio-6/portfolio-tablet.jpg 1x , ./imgs/jpgs/portfolio/portfolio-6/portfolio-tablet-2x.jpg 2x"
+                                media="(min-width: 768px)">
+                                <source srcset="./imgs/jpgs/portfolio/portfolio-6/portfolio-phone.jpg 1x , ./imgs/jpgs/portfolio/portfolio-6/portfolio-phone-2x.jpg 2x"
+                                media="(max-width: 767px)">
+                                <img src="#" alt=""> 
+                            </picture>
+                        </a>
+                        <div class="list-header-text-overlay">
+                            <p class="list-header-text">
+                                Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                 Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="list-footer">
+                        <h3 class="projects-title">Inspiration has no Borders</h3>
+                        <p class="projects-text">Веб-сайт</p>
+
+                    </div>
                 </li>
                 <li class="projects-list-item">
-                    <a href="#">
-                        <picture>
-                            <source srcset="./imgs/jpgs/portfolio/portfolio-7/portfolio-phone 1x ./imgs/jpgs/portfolio/portfolio-7/portfolio-phone-2x 2x"
-                            media="(max-width: 767px)">
-                            <source srcset="./imgs/jpgs/portfolio/portfolio-7/portfolio-tablet 1x ./imgs/jpgs/portfolio/portfolio-7/portfolio-tablet-2x 2x"
-                            media="(min-width: 768px)">
-                            <source srcset="./imgs/jpgs/portfolio/portfolio-7/portfolio-desktop 1x ./imgs/jpgs/portfolio/portfolio-7/portfolio-desktop-2x 2x"
-                            media="(min-width: 1200px)">
-                            <img src="#" alt=""> 
-                        </picture>
-                    </a>
-                    <h3 class="projects-title">Видання Limited Edition</h3>
-                    <p class="projects-text">Дизайн</p>
+                    <div class="list-header">
+                        <a href="#">
+                            <picture>
+                                <source srcset="./imgs/jpgs/portfolio/portfolio-7/portfolio-desktop.jpg 1x , ./imgs/jpgs/portfolio/portfolio-7/portfolio-desktop-2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                                <source srcset="./imgs/jpgs/portfolio/portfolio-7/portfolio-tablet.jpg 1x , ./imgs/jpgs/portfolio/portfolio-7/portfolio-tablet-2x.jpg 2x"
+                                media="(min-width: 768px)">
+                                <source srcset="./imgs/jpgs/portfolio/portfolio-7/portfolio-phone.jpg 1x , ./imgs/jpgs/portfolio/portfolio-7/portfolio-phone-2x.jpg 2x"
+                                media="(max-width: 767px)">
+                                <img src="#" alt=""> 
+                            </picture>
+                        </a>
+                        <div class="list-header-text-overlay">
+                            <p class="list-header-text">
+                                Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                 Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="list-footer">
+                        <h3 class="projects-title">Видання Limited Edition</h3>
+                        <p class="projects-text">Дизайн</p>
+
+                    </div>
                 </li>
                 <li class="projects-list-item">
-                    <a href="#">
-                        <picture>
-                            <source srcset="./imgs/jpgs/portfolio/portfolio-8/portfolio-phone 1x ./imgs/jpgs/portfolio/portfolio-8/portfolio-phone-2x 2x"
-                            media="(max-width: 767px)">
-                            <source srcset="./imgs/jpgs/portfolio/portfolio-8/portfolio-tablet 1x ./imgs/jpgs/portfolio/portfolio-8/portfolio-tablet-2x 2x"
-                            media="(min-width: 768px)">
-                            <source srcset="./imgs/jpgs/portfolio/portfolio-8/portfolio-desktop 1x ./imgs/jpgs/portfolio/portfolio-8/portfolio-desktop-2x 2x"
-                            media="(min-width: 1200px)">
-                            <img src="#" alt=""> 
-                        </picture>
-                    </a>
-                    <h3 class="projects-title">Проєкт LAB</h3>
-                    <p class="projects-text">Маркетинг</p>
+                    <div class="list-header">
+                        <a href="#">
+                            <picture>
+                                <source srcset="./imgs/jpgs/portfolio/portfolio-8/portfolio-desktop.jpg 1x , ./imgs/jpgs/portfolio/portfolio-8/portfolio-desktop-2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                                <source srcset="./imgs/jpgs/portfolio/portfolio-8/portfolio-tablet.jpg 1x , ./imgs/jpgs/portfolio/portfolio-8/portfolio-tablet-2x.jpg 2x"
+                                media="(min-width: 768px)">
+                                <source srcset="./imgs/jpgs/portfolio/portfolio-8/portfolio-phone.jpg 1x , ./imgs/jpgs/portfolio/portfolio-8/portfolio-phone-2x.jpg 2x"
+                                media="(max-width: 767px)">
+                                <img src="#" alt=""> 
+                            </picture>
+                        </a>
+                        <div class="list-header-text-overlay">
+                            <p class="list-header-text">
+                                Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                 Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="list-footer">
+                        <h3 class="projects-title">Проєкт LAB</h3>
+                        <p class="projects-text">Маркетинг</p>
+
+                    </div>
                 </li>
                 <li class="projects-list-item">
-                    <a href="#">
-                        <picture>
-                            <source srcset="./imgs/jpgs/portfolio/portfolio-9/portfolio-phone 1x ./imgs/jpgs/portfolio/portfolio-9/portfolio-phone-2x 2x"
-                            media="(max-width: 767px)">
-                            <source srcset="./imgs/jpgs/portfolio/portfolio-9/portfolio-tablet 1x ./imgs/jpgs/portfolio/portfolio-9/portfolio-tablet-2x 2x"
-                            media="(min-width: 768px)">
-                            <source srcset="./imgs/jpgs/portfolio/portfolio-9/portfolio-desktop 1x ./imgs/jpgs/portfolio/portfolio-9/portfolio-desktop-2x 2x"
-                            media="(min-width: 1200px)">
-                            <img src="#" alt=""> 
-                        </picture>
-                    </a>
-                    <h3 class="projects-title">Growing Business</h3>
-                    <p class="projects-text">Додаток</p>
+                    <div class="list-header">
+                        <a href="#">
+                            <picture>
+                                <source srcset="./imgs/jpgs/portfolio/portfolio-9/portfolio-desktop.jpg 1x , ./imgs/jpgs/portfolio/portfolio-9/portfolio-desktop-2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                                <source srcset="./imgs/jpgs/portfolio/portfolio-9/portfolio-tablet.jpg 1x , ./imgs/jpgs/portfolio/portfolio-9/portfolio-tablet-2x.jpg 2x"
+                                media="(min-width: 768px)">
+                                <source srcset="./imgs/jpgs/portfolio/portfolio-9/portfolio-phone.jpg 1x , ./imgs/jpgs/portfolio/portfolio-9/portfolio-phone-2x.jpg 2x"
+                                media="(max-width: 767px)"> ,
+                                <img src="#" alt=""> 
+                            </picture>
+                        </a>
+                        <div class="list-header-text-overlay">
+                            <p class="list-header-text">
+                                Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                 Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="list-footer">
+                        <h3 class="projects-title">Growing Business</h3>
+                        <p class="projects-text">Додаток</p>
+
+                    </div>
                 </li>
             </ul>
         </div>
