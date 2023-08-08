@@ -1,7 +1,7 @@
 .projects-list {
 }
 .projects-list-item {
-    
+    gap: 30px;
 }
 
 .projects-list-item:hover, .projects-list-item:focus {
@@ -78,12 +78,12 @@
     }
 
     .projects-list-item {
-        flex-basis: calc((100% - 2 * 30) / 2);
+        flex-basis: calc((100% - 2 * 30px) / 2);
     }
 }
 
 @media screen and (min-width: 1200px) {
     .projects-list-item {
-        flex-basis: calc((100% - 3 * 30) / 3);
+        flex-basis: calc((100% - 3 * 30px) / 3);
     }
 }

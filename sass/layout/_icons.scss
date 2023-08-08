@@ -25,15 +25,17 @@
     letter-spacing: 0.03em;
 }
 
-.icons-list-item:not(:last-child) {
-    margin-right: 30px;
-}
+
 
 @media screen and (min-width: 768px) {
     .icons-list {
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
+    }
+
+    .icons-list-item:not(:last-child) {
+        margin-right: 30px;
     }
 
     .icons-item {
