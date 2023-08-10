@@ -13,16 +13,6 @@
     background-color: #2F303A;
 }
 
-// <picture>
-//             <source srcset="./imgs/jpgs/hero/hero-mobile.jpg 1x, ./imgs/jpgs/hero/hero-mobile-2x.jpg 2x"
-//             media="(max-width: 767px)">
-//             <source srcset="./imgs/jpgs/hero/hero-tablet.jpg 1x, ./imgs/jpgs/hero/hero-tablet-2x.jpg 2x"
-//             media="(min-width: 768px)">
-//             <source srcset="./imgs/jpgs/hero/hero-desktop.jpg 1x, ./imgs/jpgs/hero/hero-desktop-2x.jpg 2x"
-//             media="(min-width: 1200px)">
-            
-// </picture>
-
 .hero-title {
     padding-top: 118px;
     margin-bottom: 30px;
@@ -51,6 +41,26 @@
 
 @media screen and (min-width: 768px) {
     .section-hero {
-        background-image: url(/imgs/jpgs/hero/hero-tablet.jpg);
+        background-image: linear-gradient(to right,
+         rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)),
+        url(/imgs/jpgs/hero/hero-tablet.jpg);
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .section-hero {
+        height: 600px;
+        background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)),
+        url(/imgs/jpgs/hero/hero-desktop.jpg);
+    }
+
+    .hero-title {
+        color: #FFF;
+        font-size: 44px;
+        font-weight: 900;
+        line-height: 60px;
+        letter-spacing: 2.64px;
+        text-transform: uppercase;
     }
 }

@@ -247,7 +247,21 @@ nav {
 
 @media screen and (min-width: 768px) {
   .section-hero {
-    background-image: url(/imgs/jpgs/hero/hero-tablet.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/imgs/jpgs/hero/hero-tablet.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-hero {
+    height: 600px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/imgs/jpgs/hero/hero-desktop.jpg);
+  }
+  .hero-title {
+    color: #FFF;
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 60px;
+    letter-spacing: 2.64px;
+    text-transform: uppercase;
   }
 }
 .icons-background {
@@ -258,6 +272,14 @@ nav {
   padding-bottom: 25px;
   background-color: #F5F4FA;
   border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.icons-list-item {
+  width: 450px;
+}
+
+.icons-list-item:not(:last-child) {
   margin-bottom: 30px;
 }
 
@@ -290,8 +312,11 @@ nav {
   }
 }
 @media screen and (min-width: 1200px) {
-  .icons-item {
+  .icons-list-item {
     flex-basis: calc((100% - 60px) / 4);
+  }
+  .icons-list {
+    flex-wrap: nowrap;
   }
 }
 .section-features {
