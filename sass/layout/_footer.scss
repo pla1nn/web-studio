@@ -3,11 +3,6 @@
     text-align: center;
 }
 
-// .footer-box {
-//     display: flex;
-//     justify-content: space-between;
-// }
-
 .footer-contacts {
     margin-top: 60px;
 }
@@ -72,6 +67,16 @@
 
 .footer-apps-item:not(:last-child) {
     margin-right: 10px;
+}
+
+.footer-icons-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.10);
 }
 
 .footer-icon {
@@ -150,5 +155,22 @@
         text-align: unset;
     }
 
-
+    .footer-box {
+        display: flex;
+        justify-content: space-between;
+    }   
+    
+    .footer-input {
+        width: 358px;
+        margin-right: 12px;
+    }
+    
+    .footer-contacts {
+        margin-right: 70px;
+    }
+    
+    .footer-sub-form {
+        display: flex;
+        justify-content: space-between;
+    }
 }

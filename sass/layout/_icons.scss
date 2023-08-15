@@ -28,9 +28,10 @@
 }
 
 .icons-list-text {
-    font-weight: 400;
+    color: #757575;
     font-size: 14px;
-    letter-spacing: 0.03em;
+    line-height: 24px;
+    letter-spacing: 0.42px;
 }
 
 
@@ -46,7 +47,7 @@
         margin-right: 30px;
     }
 
-    .icons-item {
+    .icons-list-item {
         flex-basis: calc((100% - 2 * 30px) / 2);
     }
 }

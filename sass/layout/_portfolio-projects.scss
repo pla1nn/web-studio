@@ -77,6 +77,10 @@
         gap: 30px;
     }
 
+    .list-header-text {
+        padding: 49px 24px 77px;
+    }
+
     .projects-list-item {
         flex-basis: calc((100% - 2 * 30px) / 2);
     }
@@ -85,5 +89,9 @@
 @media screen and (min-width: 1200px) {
     .projects-list-item {
         flex-basis: calc((100% - 3 * 30px) / 3);
+    }
+
+    .list-header-text {
+        padding: 59px 24px;
     }
 }
