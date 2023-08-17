@@ -51,7 +51,7 @@
 }
 
 .nav-contacts {
-
+    
 }
 
 .nav-contacts-item {
@@ -61,7 +61,10 @@
     letter-spacing: 0.28px;
 }
 
-.nav-contacts-link {}
+.nav-contacts-link {
+    display: flex;
+    align-items: center;
+}
 
 .nav-contacts-icon {
     fill: #757575;
@@ -94,17 +97,23 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding-top: 32px;
+        padding-bottom: 32px;
     }
 
     .nav-list {
         display: flex;
         margin-right: 98px;
-        padding-top: 32px;
-        padding-bottom: 32px;
+        
     }
 
     .nav-list-item:not(:last-child) {
         margin-right: 50px;
+    }
+
+    .nav-contacts-item {
+        display: flex;
+        align-items: center;
     }
 
     .nav-contacts-icon {
@@ -130,7 +139,12 @@
         align-items: center;
     }
 
+    .nav-contacts-item {
+        // padding-top: 32px;
+    }
+
     .nav-contacts-item:not(:last-child) {
         margin-right: 30px;
+        margin-bottom: 0px;
     }
 }

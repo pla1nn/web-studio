@@ -2,16 +2,23 @@
     transform: translate(-50%, -50%) scale(0);
 }
 
+.modal-close {
+    
+}
+
 .modal-title {
     color: #212121;
     text-align: center;
-    font-family: Roboto;
     font-size: 20px;
-    font-style: normal;
     font-weight: 700;
     line-height: 30px;
     letter-spacing: 0.6px;
-    margin-bottom: 12px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .modal-form {
@@ -24,11 +31,7 @@
 
 .modal-input-title {
     color: #757575;
-    font-family: Roboto;
     font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     letter-spacing: 0.12px;
     margin-bottom: 4px;
 }
@@ -58,7 +61,7 @@
 .modal-icon {
     position: absolute;
     left: 12px;
-    top: 45%;
+    top: 43%;
 
     &:focus {
         
@@ -69,39 +72,64 @@
 }
 
 .modal-input-title {
-    color: #757575;
-    font-family: Roboto;
-    font-size: 12px;
-    font-weight: 400;
     letter-spacing: 0.12px;
 }
 
 .modal-input-comment {
+    color: #909090;
+    font-size: 12px;
+    letter-spacing: 0.12px;
+    width: 370px;
+    height: 120px;
 }
+
+.modal-input-comment::placeholder {
+    position: absolute;
+    top: 10%;
+    left: 4%;
+}
+
 .checkbox-label {
-    
+    display: flex;
+    align-items: center;
+    margin-bottom: 31px;
 }
+
 .checkbox-input {
+    margin-right: 8px;
 }
+
 .checkbox-title {
     color: #757575;
-    font-family: Roboto;
     font-size: 12px;
-    font-weight: 400;
     letter-spacing: 0.36px;
 }
 
 .checkbox-link {
     color: #2196F3;
-    font-family: Roboto;
     font-size: 12px;
-    font-weight: 400;
     letter-spacing: 0.36px;
     text-decoration-line: underline;
 }
 
 .modal-button {
+    width: 200px;
+    height: 50px;
+    border: none;
     border-radius: 4px;
     background: #2196F3;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.96px;
+}
+
+@media screen and (min-width: 1200px) {
+    .modal-form-input {
+        width: 448px;
+    }
 }

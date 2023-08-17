@@ -691,14 +691,12 @@
     <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="button-close" type="button" data-modal-close>
-                <svg class="modal-close-button" width="18px" height="18px">
-                    <use href="./imgs/icons/symbol-defs2.svg#icon-close">
-    
-                    </use>
-                </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none" class="modal-close">
+                <path d="M15 4.10786L13.8921 3L9.5 7.39214L5.10786 3L4 4.10786L8.39214 8.5L4 12.8921L5.10786 14L9.5 9.60786L13.8921 14L15 12.8921L10.6079 8.5L15 4.10786Z" fill="black"/>
+              </svg>
             </button>
             <h3 class="modal-title">
-                Залиште свої дані, ми вам <br> передзвонимо
+                Залиште свої дані, ми вам передзвонимо
             </h3>
             <form>
                 <div class="modal-form">
@@ -706,8 +704,16 @@
                         <span class="modal-input-title">Ім'я</span>
                         <div class="modal-form-field">
                             <input class="modal-form-input" type="text">
-                            <svg class="modal-icon" width="18px" height="18px">
-                                <use href="./imgs/icons/symbol-defs2.svg#icon-person"></use>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                             viewBox="0 0 18 18" fill="none" class="modal-icon">
+                              <g clip-path="url(#clip0_3_14078)">
+                                <path d="M9 9C10.6575 9 12 7.6575 12 6C12 4.3425 10.6575 3 9 3C7.3425 3 6 4.3425 6 6C6 7.6575 7.3425 9 9 9ZM9 10.5C6.9975 10.5 3 11.505 3 13.5V14.25C3 14.6625 3.3375 15 3.75 15H14.25C14.6625 15 15 14.6625 15 14.25V13.5C15 11.505 11.0025 10.5 9 10.5Z" fill="#212121"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_3_14078">
+                                  <rect width="18" height="18" fill="white"/>
+                                </clipPath>
+                              </defs>
                             </svg>
                         </div>
                     </label>
@@ -717,8 +723,16 @@
                         <span class="modal-input-title">Телефон</span>
                         <div class="modal-form-field">
                             <input class="modal-form-input" type="tel">
-                            <svg class="modal-icon" width="18px" height="18px">
-                                <use href="./imgs/icons/symbol-defs2.svg#icon-phone"></use>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" 
+                            viewBox="0 0 18 18" fill="none" class="modal-icon">
+                              <g clip-path="url(#clip0_3_14084)">
+                                <path d="M13.996 11.1227L12.1579 10.9128C11.7164 10.8622 11.2822 11.0141 10.9711 11.3253L9.63948 12.6569C7.59147 11.6148 5.91254 9.94308 4.87044 7.88782L6.20925 6.54901C6.52043 6.23782 6.6724 5.80361 6.62174 5.36217L6.41188 3.53849C6.32504 2.80757 5.70991 2.25757 4.97176 2.25757H3.71979C2.90203 2.25757 2.22178 2.93783 2.27243 3.75559C2.65598 9.93584 7.59871 14.8714 13.7717 15.2549C14.5894 15.3056 15.2697 14.6253 15.2697 13.8075V12.5556C15.2769 11.8247 14.7269 11.2095 13.996 11.1227Z" fill="#212121"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_3_14084">
+                                  <rect width="18" height="18" fill="white"/>
+                                </clipPath>
+                              </defs>
                             </svg>
                         </div>
                     </label>
@@ -728,13 +742,27 @@
                         <span class="modal-input-title">Пошта</span>
                         <div class="modal-form-field">
                             <input class="modal-form-input" type="email">
-                            <svg class="modal-icon" width="18px" height="18px">
-                                <use href="./imgs/icons/symbol-defs2.svg#icon-email"></use>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" 
+                            viewBox="0 0 18 18" fill="none" class="modal-icon">
+                              <g clip-path="url(#clip0_3_14090)">
+                                <path d="M15 3H3C2.175 3 1.5075 3.675 1.5075 4.5L1.5 13.5C1.5 14.325 2.175 15 3 15H15C15.825 15 16.5 14.325 16.5 13.5V4.5C16.5 3.675 15.825 3 15 3ZM14.7 6.1875L9.3975 9.5025C9.1575 9.6525 8.8425 9.6525 8.6025 9.5025L3.3 6.1875C3.1125 6.0675 3 5.865 3 5.6475C3 5.145 3.5475 4.845 3.975 5.1075L9 8.25L14.025 5.1075C14.4525 4.845 15 5.145 15 5.6475C15 5.865 14.8875 6.0675 14.7 6.1875Z" fill="#212121"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_3_14090">
+                                  <rect width="18" height="18" fill="white"/>
+                                </clipPath>
+                              </defs>
                             </svg>
                         </div>
                     </label>
                 </div>
                 <label class="modal-label">
+                  <p class="modal-input-title">
+                    Коментар
+                  </p>
+                  <input class="modal-input-comment modal-form-input" placeholder="Введіть текст" type="text"/>
+                </label>
+                <!-- <label class="modal-label">
                     <p class="modal-input-title">
                         Коментар
                     </p>
@@ -742,9 +770,9 @@
                     type="text"
                     placeholder="Введіть текст">
                     </textarea>
-                </label>
+                </label> -->
                 <label class="checkbox-label">
-                    <input class="checkbox-input" type="text" name="agreement">
+                  <input type="checkbox" class="checkbox-input">
                     <span class="checkbox-title">
                         Погоджуюся з розсилкою та приймаю 
                         <a href="#" class="checkbox-link">Умови договору</a>
