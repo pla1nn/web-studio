@@ -490,6 +490,8 @@ body {
 }
 .projects-nav-list {
   display: flex;
+  justify-content: start;
+  width: 326px;
   margin-bottom: 40px;
 }
 

@@ -1,11 +1,12 @@
 .projects-nav-list {
     display: flex;
-    
+    justify-content: start;
+    width: 326px;
     margin-bottom: 40px;
 }
 
 .projects-nav-item {
-
+    
 }
 
 .projects-nav-item:not(:last-child) {
