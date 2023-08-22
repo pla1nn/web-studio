@@ -43,8 +43,9 @@
         gap: 30px;
     }
 
-    .icons-list-item:not(:last-child) {
-        margin-right: 30px;
+    .icons-list-title {
+        display: flex;
+        flex: start;
     }
 
     .icons-list-item {

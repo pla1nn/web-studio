@@ -1,12 +1,12 @@
 .projects-nav-list {
     display: flex;
     flex-wrap: wrap;
-    width: 300px;
+    width: 336px;
     margin-bottom: 40px;
 }
 
 .projects-nav-item {
-    
+    margin-bottom: 15px;
 }
 
 .projects-nav-item:not(:last-child) {
@@ -14,6 +14,7 @@
 }
 
 .projects-button {
+    padding: 6px 22px;
     color: #212121;
     text-align: center;
     font-size: 16px;
