@@ -89,10 +89,6 @@ body {
   justify-content: space-between;
 }
 
-.menu-button {
-  margin-bottom: 10px;
-}
-
 .logo {
   color: #212121;
   font-family: Raleway;
@@ -177,8 +173,7 @@ body {
     margin-right: 50px;
   }
   .nav-contacts {
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
   }
   .nav-contacts-item {
     display: flex;
@@ -201,7 +196,6 @@ body {
   .nav-contacts {
     display: flex;
     align-items: center;
-    padding-right: 215px;
   }
   .nav-contacts-item:not(:last-child) {
     margin-right: 30px;
@@ -1105,9 +1099,6 @@ form {
     padding-bottom: 48px;
   }
   .menu-button {
-    position: absolute;
-    top: 10px;
-    right: 15px;
     border: none;
     background-color: transparent;
   }

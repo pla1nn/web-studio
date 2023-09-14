@@ -9,10 +9,10 @@
     justify-content: space-between;
 }
 
-.menu-button {
-    margin-bottom: 10px;
+// .menu-button {
+//     // margin-bottom: 10px;
     
-}
+// }
 
 .logo {
     color: #212121;
@@ -208,8 +208,7 @@
     }
 
     .nav-contacts {
-        display: flex;
-        flex-wrap: wrap;
+        display: block;
     }
 
     .nav-contacts-item {
@@ -239,7 +238,7 @@
     .nav-contacts {
         display: flex;
         align-items: center;
-        padding-right: 215px;
+        
     }
 
     .nav-contacts-item {
